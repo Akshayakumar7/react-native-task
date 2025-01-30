@@ -41,8 +41,8 @@ const CustomDropDown = ({
         }}
         style={[style.textinputStyle, customTextInputStyle]}
       >
-        <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <View style={{ width: "90%" }}>
+        <View style={styles.mainFlexView}>
+          <View style={styles.inputStyle}>
             <TextInput
               placeholder={placeHolder}
               value={value}
@@ -135,6 +135,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     backgroundColor: "#fff",
   },
+  mainFlexView:{ flexDirection: "row", alignItems: "center" },
+  inputStyle:{ width: "90%" }
 });
 
 export default CustomDropDown;
